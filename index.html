@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Student Management System - A platform for managing student information, academic records, attendance, and reports.">
+
+    <title>Student Management System</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f7f6;
+            color: #26332c;
+        }
+
+        .navbar {
+            background: #123d2b;
+        }
+
+        .navbar-brand {
+            color: white !important;
+            font-weight: bold;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #123d2b, #198754);
+            color: white;
+            padding: 90px 20px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 45px;
+            font-weight: bold;
+        }
+
+        .hero p {
+            max-width: 750px;
+            margin: 20px auto;
+            font-size: 18px;
+        }
+
+        .section-title {
+            color: #123d2b;
+            font-weight: bold;
+            margin-bottom: 35px;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 30px 20px;
+            border-radius: 12px;
+            height: 100%;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+            transition: 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-icon {
+            font-size: 40px;
+            color: #198754;
+            margin-bottom: 15px;
+        }
+
+        .stat-card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        .stat-card i {
+            font-size: 30px;
+            color: #198754;
+        }
+
+        .technology {
+            display: inline-block;
+            background: white;
+            color: #198754;
+            padding: 12px 20px;
+            margin: 7px;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .btn-custom {
+            background: white;
+            color: #123d2b;
+            padding: 12px 28px;
+            border-radius: 30px;
+            font-weight: bold;
+        }
+
+        .btn-custom:hover {
+            background: #e8f5ed;
+            color: #123d2b;
+        }
+
+        .footer {
+            background: #123d2b;
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+
+        <a class="navbar-brand" href="#">
+            <i class="bi bi-mortarboard-fill"></i>
+            Student Management System
+        </a>
+
+        <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navigation">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#features">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#technologies">Technologies</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#developer">Developer</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero" id="home">
+    <div class="container">
+
+        <i class="bi bi-mortarboard-fill" style="font-size:65px;"></i>
+
+        <h1>Student Management System</h1>
+
+        <p>
+            A modern digital solution designed to simplify student
+            administration, academic record management, attendance tracking,
+            and institutional information management.
+        </p>
+
+        <a href="#about" class="btn btn-custom mt-3">
+            Explore System <i class="bi bi-arrow-down"></i>
+        </a>
+
+    </div>
+</section>
+
+<!-- Statistics Section -->
+<section class="py-5">
+    <div class="container">
+
+        <h2 class="section-title text-center">
+            System Overview
+        </h2>
+
+        <div class="row g-4 text-center">
+
+            <div class="col-md-3 col-6">
+                <div class="stat-card">
+                    <i class="bi bi-people-fill"></i>
+                    <h5 class="mt-3">Students</h5>
+                    <p class="text-muted mb-0">Student Records</p>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-6">
+                <div class="stat-card">
+                    <i class="bi bi-person-workspace"></i>
+                    <h5 class="mt-3">Trainers</h5>
+                    <p class="text-muted mb-0">Trainer Management</p>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-6">
+                <div class="stat-card">
+                    <i class="bi bi-journal-bookmark-fill"></i>
+                    <h5 class="mt-3">Courses</h5>
+                    <p class="text-muted mb-0">Academic Programs</p>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-6">
+                <div class="stat-card">
+                    <i class="bi bi-calendar-check-fill"></i>
+                    <h5 class="mt-3">Attendance</h5>
+                    <p class="text-muted mb-0">Attendance Records</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section class="py-5 bg-white" id="about">
+    <div class="container text-center">
+
+        <h2 class="section-title">About the System</h2>
+
+        <p class="lead">
+            The Student Management System is a digital platform designed
+            to improve the efficiency of academic administration by
+            centralizing student information and institutional records.
+        </p>
+
+        <p>
+            The system provides an organized way to manage student profiles,
+            trainer information, courses, attendance, academic records,
+            and administrative reports.
+        </p>
+
+    </div>
+</section>
+
+<!-- Features Section -->
+<section class="py-5" id="features">
+    <div class="container">
+
+        <h2 class="section-title text-center">
+            Main System Features
+        </h2>
+
+        <div class="row g-4">
+
+            <div class="col-md-4">
+                <div class="feature-card text-center">
+                    <i class="bi bi-people-fill feature-icon"></i>
+                    <h5>Student Management</h5>
+                    <p>
+                        Register, update, view, and manage student
+                        information and profiles.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="feature-card text-center">
+                    <i class="bi bi-person-workspace feature-icon"></i>
+                    <h5>Trainer Management</h5>
+                    <p>
+                        Organize trainer information and manage
+                        academic responsibilities.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="feature-card text-center">
+                    <i class="bi bi-journal-bookmark-fill feature-icon"></i>
+                    <h5>Course Management</h5>
+                    <p>
+                        Manage courses, academic programs,
+                        and course information.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="feature-card text-center">
+                    <i class="bi bi-calendar-check-fill feature-icon"></i>
+                    <h5>Attendance Management</h5>
+                    <p>
+                        Record, monitor, and manage student
+                        attendance information.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="feature-card text-center">
+                    <i class="bi bi-file-earmark-bar-graph-fill feature-icon"></i>
+                    <h5>Reports and Records</h5>
+                    <p>
+                        Generate organized reports and access
+                        academic information.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="feature-card text-center">
+                    <i class="bi bi-shield-lock-fill feature-icon"></i>
+                    <h5>Secure Access</h5>
+                    <p>
+                        Support controlled system access
+                        and protection of institutional data.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Technologies Section -->
+<section class="py-5 bg-white text-center" id="technologies">
+    <div class="container">
+
+        <h2 class="section-title">
+            Technologies Used
+        </h2>
+
+        <span class="technology">HTML5</span>
+        <span class="technology">CSS3</span>
+        <span class="technology">JavaScript</span>
+        <span class="technology">Bootstrap 5</span>
+        <span class="technology">Python</span>
+        <span class="technology">Flask</span>
+        <span class="technology">SQLite</span>
+
+    </div>
+</section>
+
+<!-- Developer Section -->
+<section class="py-5 text-center" id="developer">
+    <div class="container">
+
+        <h2 class="section-title">Project Developer</h2>
+
+        <h4>Nicolas IGIRANEZA</h4>
+
+        <p>Year 4 Information Technology Student</p>
+        <p>RP Ngoma College</p>
+
+        <p class="text-muted">
+            Academic Software Development Project
+        </p>
+
+        <a href="https://github.com/Nicolasigiraneza/MyFirstProject"
+           target="_blank" class="btn btn-success">
+            <i class="bi bi-github"></i> View on GitHub
+        </a>
+
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <p class="mb-0">
+        &copy; 2026 Student Management System.
+        Developed by Nicolas IGIRANEZA.
+    </p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
